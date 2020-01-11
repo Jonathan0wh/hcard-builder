@@ -2,6 +2,16 @@
   "name": "hcard-builder",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.0",
+    "@storybook/addon-docs": "^5.3.0-rc.14",
+    "@storybook/addon-links": "^5.3.0",
+    "@storybook/addons": "^5.3.0",
+    "@storybook/preset-create-react-app": "^1.5.0",
+    "@storybook/react": "^5.3.0",
+    "eslint": "^6.8.0",
+    "is-function": "^1.0.1"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -10,16 +20,29 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "husky": "^4.0.6",
+    "jest-enzyme": "^7.1.2",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
+    "react-test-renderer": "^16.12.0",
+    "source-map-explorer": "^2.2.2",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,6 +57,17 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
     ]
   }
 }
