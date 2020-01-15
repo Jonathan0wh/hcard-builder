@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormField /> should render by default 1`] = `
+<Col
+  className="form_field_col"
+  lg={12}
+>
+  <FormItem
+    hasFeedback={false}
+    htmlFor="text"
+    label="Text"
+  >
+    <Input
+      id="text"
+      name="text"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </FormItem>
+</Col>
+`;
+
+exports[`<FormField /> should render email field 1`] = `
+<Col
+  className="form_field_col"
+  lg={12}
+>
+  <FormItem
+    hasFeedback={false}
+    htmlFor="text"
+    label="Text"
+  >
+    <Input
+      id="text"
+      name="text"
+      onChange={[Function]}
+      type="email"
+      value=""
+    />
+  </FormItem>
+</Col>
+`;
+
+exports[`<FormField /> should render tel input 1`] = `
+<Col
+  className="form_field_col"
+  lg={12}
+>
+  <FormItem
+    hasFeedback={false}
+    htmlFor="text"
+    label="Text"
+  >
+    <Input
+      id="text"
+      name="text"
+      onChange={[Function]}
+      type="tel"
+      value=""
+    />
+  </FormItem>
+</Col>
+`;

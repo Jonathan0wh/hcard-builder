@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HCardBuilder /> should render by default 1`] = `
+<Adapter
+  className="container"
+>
+  <Adapter>
+    <Row
+      gutter={0}
+    >
+      <Col
+        lg={12}
+      >
+        <BuilderForm
+          formData={
+            Object {
+              "avatar": undefined,
+              "country": "",
+              "email": "",
+              "givenName": "",
+              "house": "",
+              "postcode": "",
+              "state": "",
+              "street": "",
+              "suburb": "",
+              "surname": "",
+              "tel": "",
+            }
+          }
+          formHandler={
+            Object {
+              "setAvatar": [Function],
+              "setCountry": [Function],
+              "setEmail": [Function],
+              "setGivenName": [Function],
+              "setHouse": [Function],
+              "setPostcode": [Function],
+              "setState": [Function],
+              "setStreet": [Function],
+              "setSuburb": [Function],
+              "setSurname": [Function],
+              "setTel": [Function],
+            }
+          }
+        />
+      </Col>
+      <Col
+        lg={12}
+      >
+        <BuilderPreview
+          formData={
+            Object {
+              "avatar": undefined,
+              "country": "",
+              "email": "",
+              "givenName": "",
+              "house": "",
+              "postcode": "",
+              "state": "",
+              "street": "",
+              "suburb": "",
+              "surname": "",
+              "tel": "",
+            }
+          }
+        />
+      </Col>
+    </Row>
+  </Adapter>
+</Adapter>
+`;

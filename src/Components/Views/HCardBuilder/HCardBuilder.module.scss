@@ -1,0 +1,17 @@
+@import './styles/colors';
+
+.container {
+  height: 100%;
+  background-color: $white;
+
+  :global {
+    .ant-row {
+      @media only screen and (min-width: 992px) {
+        height: 100%;
+      }
+    }
+    .ant-col {
+      height: 100%;
+    }
+  }
+}

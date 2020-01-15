@@ -1,0 +1,104 @@
+@import 'styles/colors';
+
+.container {
+  background-color: $background-grey;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  :global {
+    .vcard {
+      background-color: $white;
+      box-shadow: 0 2px 2px $shadow-grey;
+      width: 375px;
+
+      @media only screen and (min-width: 992px) {
+        width: 430px;
+        height: 306px;
+      }
+    }
+    .fn {
+      display: inline-block;
+      margin-top: 55px;
+      margin-left: 25px;
+    }
+    .photo {
+      float: right;
+      width: 87px;
+      height: 108px;
+      margin-top: 10px;
+      margin-right: 12px;
+      object-fit: cover;
+      box-shadow: 0 2px 2px $shadow-grey;
+    }
+    .postal-code {
+      display: inline-block;
+      width: 90px;
+
+      @media only screen and (min-width: 992px) {
+        width: 120px;
+      }
+    }
+  }
+}
+
+.preview_title_container {
+  @media only screen and (min-width: 992px) {
+    width: 430px;
+    text-align: right;
+  }
+}
+
+.preview_title {
+  font-size: 16px;
+  font-weight: 400;
+  color: $text-grey;
+}
+
+.preview_identity {
+  height: 100px;
+  background-color: $bluewood;
+  color: $white;
+  font-family: 'Merriweather';
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.preview_detail {
+  padding: 30px 25px 26px 25px;
+}
+
+.preview_row {
+  border-bottom-color: $divider-grey;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-bottom: 6px;
+  height: 24px;
+  white-space: nowrap;
+}
+
+.preview_row_additional {
+  padding-left: 75px;
+}
+
+.preview_label {
+  font-size: 10px;
+  font-weight: 400;
+  color: $text-bluewood;
+  display: inline-block;
+  width: 75px;
+}
+
+.preview_label_country {
+  width: 60px;
+}
+
+.preview_content {
+  font-family: 'Merriweather';
+  font-size: 16px;
+  font-weight: 400;
+  color: $black;
+}

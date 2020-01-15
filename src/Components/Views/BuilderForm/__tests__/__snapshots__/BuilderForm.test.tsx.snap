@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BuilderForm /> should render by default 1`] = `
+<Form
+  className="form"
+  colon={true}
+  hideRequiredMark={false}
+  layout="vertical"
+  onSubmit={[Function]}
+>
+  <Row
+    gutter={0}
+  >
+    <Title
+      level={2}
+    >
+      hCard Builder
+    </Title>
+  </Row>
+  <h5>
+    PERSONAL DETAILS
+  </h5>
+  <Divider />
+  <Row
+    gutter={20}
+  >
+    <FormField
+      label="GIVEN NAME"
+      setValue={[MockFunction]}
+      value="Sam"
+    />
+    <FormField
+      label="SURNAME"
+      setValue={[MockFunction]}
+      value="Fairtax"
+    />
+    <FormField
+      label="EMAIL"
+      setValue={[MockFunction]}
+      type="email"
+      value="sam.fairtax@fairtaxmedia.com.au"
+    />
+    <FormField
+      label="PHONE"
+      setValue={[MockFunction]}
+      type="tel"
+      value="02 9282 2833"
+    />
+  </Row>
+  <h5>
+    ADDRESS
+  </h5>
+  <Divider />
+  <Row
+    gutter={20}
+  >
+    <FormField
+      label="HOUSE NAME OR #"
+      setValue={[MockFunction]}
+      value="1"
+    />
+    <FormField
+      label="STREET"
+      setValue={[MockFunction]}
+      value="Darling Island Road"
+    />
+    <FormField
+      label="SUBURB"
+      setValue={[MockFunction]}
+      value="Pyrmont"
+    />
+    <FormField
+      label="STATE"
+      setValue={[MockFunction]}
+      value="NSW"
+    />
+    <FormField
+      label="POSTCODE"
+      setValue={[MockFunction]}
+      value="2009"
+    />
+    <FormField
+      label="COUNTRY"
+      setValue={[MockFunction]}
+      value="Australia"
+    />
+  </Row>
+  <Row
+    gutter={0}
+  >
+    <Col
+      className="button_col"
+      lg={12}
+    >
+      <Button
+        block={false}
+        className="button_upload"
+        ghost={false}
+        htmlType="button"
+        loading={false}
+      >
+        <label
+          htmlFor="upload-avatar"
+        >
+          Upload Avatar
+        </label>
+        <Input
+          accept="image/*"
+          className="button_upload_input"
+          id="upload-avatar"
+          name="upload-avatar"
+          onChange={[Function]}
+          type="file"
+        />
+      </Button>
+    </Col>
+    <Col
+      className="button_col"
+      lg={12}
+    >
+      <Button
+        block={false}
+        className="button_create"
+        ghost={false}
+        htmlType="button"
+        loading={false}
+      >
+        Create hCard
+      </Button>
+    </Col>
+  </Row>
+</Form>
+`;

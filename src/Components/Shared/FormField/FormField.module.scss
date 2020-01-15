@@ -1,0 +1,30 @@
+@import 'styles/colors';
+
+.form_field_col {
+  :global {
+    .ant-form-item {
+      padding-bottom: 0;
+      margin-bottom: 16px;
+    }
+    .ant-form-item-label {
+      padding: 0;
+    }
+    label {
+      font-size: 12px;
+      font-weight: 400;
+      color: $bluewood;
+    }
+    label::after {
+      content: none;
+    }
+    input[type='text'],
+    input[type='email'],
+    input[type='tel'] {
+      font-family: 'Merriweather';
+      font-size: 16px;
+      font-weight: 400;
+      color: $black;
+      height: 36px;
+    }
+  }
+}

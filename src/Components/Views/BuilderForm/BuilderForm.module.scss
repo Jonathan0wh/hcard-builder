@@ -1,0 +1,71 @@
+@import 'styles/colors';
+
+.form {
+  :global {
+    h2.ant-typography {
+      font-size: 28px;
+      font-weight: 800;
+      color: $bluewood;
+      margin-bottom: 0;
+    }
+    h5 {
+      font-size: 10px;
+      font-weight: 700;
+      color: $subtitle-grey;
+      margin-top: 36px;
+    }
+    .ant-divider,
+    .ant-divider-horizontal {
+      margin: 0 0 25px 0;
+    }
+    .ant-btn {
+      font-size: 20px;
+      font-weight: 400;
+      border: none;
+      width: 190px;
+      height: 36px;
+    }
+  }
+
+  padding: 40px;
+}
+
+.button_col {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button_upload {
+  background-color: $button-bluewood;
+  color: $white;
+  box-shadow: 0 2px $button-bluewood-shadow;
+
+  label {
+    font-size: 20px;
+    font-weight: 400;
+    color: $white;
+    cursor: pointer;
+  }
+
+  input {
+    display: none !important;
+  }
+}
+
+.button_upload:hover,
+.button_upload:focus {
+  background-color: $button-bluewood-shadow;
+  color: $white;
+}
+
+.button_create {
+  background-color: $button-blue;
+  color: $white;
+  box-shadow: 0 2px $button-blue-shadow;
+}
+
+.button_create:hover,
+.button_create:focus {
+  background-color: $button-blue-shadow;
+  color: $white;
+}
